@@ -1,0 +1,17 @@
+//Program of taking name 
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int n;
+    char *str;
+    printf("Enter the  size of the String : ");
+    scanf("%d", &n);
+    str= (char*) malloc( n* sizeof(char));
+    printf("Enter your name : ");
+    fflush(stdin);
+    gets(str);
+    printf("\nYour name is : %s", str);
+    free(str);
+    return 0;
+}
